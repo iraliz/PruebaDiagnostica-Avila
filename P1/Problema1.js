@@ -12,7 +12,7 @@ function validarFEN(cadena) {
 	//se dividen en 6 partes
 	const partes = cadena.trim().split(/\s+/);
 	if (partes.length !== 6) {
-		resultado.razon = ` ${partes.length}.La FEN debe tener 6 campos separados por espacios, se encontraron`;
+		resultado.razon = `La FEN debe tener 6 campos separados por espacios, se encontraron ${partes.length}.`;
 		return resultado;
 	}
 
@@ -113,4 +113,5 @@ if (argumentos.length > 0) {
 		rl.close();
 	});
 }
+
 
